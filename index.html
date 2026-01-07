@@ -116,8 +116,8 @@
                 <i class="fa-solid fa-seedling text-wellness-green text-xl md:text-2xl"></i>
                 <span class="font-bold text-lg md:text-xl text-gray-800 tracking-tight">Liver<span class="text-wellness-green">Care</span></span>
             </div>
-            <!-- Made visible on mobile but smaller -->
-            <a href="#pricing" class="bg-wellness-green text-white text-sm md:text-base px-4 py-2 md:px-6 md:py-2 rounded-full font-semibold hover:bg-wellness-dark transition shadow-lg shadow-green-200 flex items-center gap-2">
+            <!-- Made visible on mobile but smaller - LINK UPDATED -->
+            <a href="https://superprofile.bio/vp/फैटी-लिवर-का-संपूर्ण-समाधान-मात्रा-99₹" target="_blank" class="bg-wellness-green text-white text-sm md:text-base px-4 py-2 md:px-6 md:py-2 rounded-full font-semibold hover:bg-wellness-dark transition shadow-lg shadow-green-200 flex items-center gap-2">
                 Get Guide <span class="hidden xs:inline">@ ₹99</span>
             </a>
         </div>
@@ -152,7 +152,8 @@
                         </div>
                     </div>
 
-                    <a href="#pricing" onclick="triggerPurchase()" class="inline-flex items-center justify-center w-full xs:w-auto bg-accent-gold hover:bg-yellow-500 text-white text-lg md:text-xl font-bold py-3 px-8 rounded-full shadow-xl shadow-yellow-200 transition transform hover:-translate-y-1 active:scale-95">
+                    <!-- LINK UPDATED -->
+                    <a href="https://superprofile.bio/vp/फैटी-लिवर-का-संपूर्ण-समाधान-मात्रा-99₹" target="_blank" class="inline-flex items-center justify-center w-full xs:w-auto bg-accent-gold hover:bg-yellow-500 text-white text-lg md:text-xl font-bold py-3 px-8 rounded-full shadow-xl shadow-yellow-200 transition transform hover:-translate-y-1 active:scale-95">
                         Download Now <i class="fa-solid fa-arrow-right ml-3"></i>
                     </a>
                     <p class="mt-4 text-[10px] md:text-xs text-gray-500"><i class="fa-solid fa-lock mr-1"></i> Secure Payment | Instant PDF Access</p>
@@ -285,7 +286,8 @@
             
             <!-- Mid Page CTA -->
             <div class="text-center mt-10 md:mt-12" data-aos="zoom-in">
-                <a href="#pricing" onclick="triggerPurchase()" class="inline-block w-full xs:w-auto bg-wellness-green hover:bg-wellness-dark text-white text-base md:text-lg font-bold py-3 px-6 md:px-8 rounded-full shadow-lg shadow-green-200 transition transform hover:scale-105">
+                <!-- LINK UPDATED -->
+                <a href="https://superprofile.bio/vp/फैटी-लिवर-का-संपूर्ण-समाधान-मात्रा-99₹" target="_blank" class="inline-block w-full xs:w-auto bg-wellness-green hover:bg-wellness-dark text-white text-base md:text-lg font-bold py-3 px-6 md:px-8 rounded-full shadow-lg shadow-green-200 transition transform hover:scale-105">
                     Start Your Recovery Journey Today <i class="fa-solid fa-chevron-right ml-2"></i>
                 </a>
             </div>
@@ -406,10 +408,11 @@
                         <i class="fa-solid fa-hourglass-half mr-2"></i> Limited Time Offer
                     </div>
 
-                    <button onclick="triggerPurchase()" class="w-full md:w-2/3 mx-auto block bg-accent-gold hover:bg-yellow-500 text-white text-lg md:text-xl font-bold py-3 md:py-4 rounded-xl shadow-lg shadow-yellow-200 transition transform hover:-translate-y-1 mb-4 relative overflow-hidden group active:scale-95">
+                    <!-- LINK UPDATED -->
+                    <a href="https://superprofile.bio/vp/फैटी-लिवर-का-संपूर्ण-समाधान-मात्रा-99₹" target="_blank" class="w-full md:w-2/3 mx-auto block bg-accent-gold hover:bg-yellow-500 text-white text-lg md:text-xl font-bold py-3 md:py-4 rounded-xl shadow-lg shadow-yellow-200 transition transform hover:-translate-y-1 mb-4 relative overflow-hidden group active:scale-95 text-center">
                         <span class="relative z-10">YES! I Want This Guide <i class="fa-solid fa-download ml-2"></i></span>
                         <div class="absolute top-0 left-0 w-full h-full bg-white opacity-20 transform -skew-x-12 -translate-x-full group-hover:animate-shine"></div>
-                    </button>
+                    </a>
                     
                     <p class="text-[10px] md:text-xs text-gray-500">100% Secure Payment • Instant PDF Download via Email</p>
                 </div>
@@ -479,24 +482,6 @@
             // Specific settings for mobile can be added via data-aos-* attributes if needed,
             // but global config handles general behavior.
         });
-
-        // Mock Purchase Function
-        function triggerPurchase() {
-            // In a real scenario, this would integrate with Razorpay/Stripe/Instamojo
-            const btn = event.currentTarget;
-            const originalText = btn.innerHTML;
-            
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
-            btn.disabled = true;
-            btn.classList.add('opacity-75');
-
-            setTimeout(() => {
-                alert("This is a demo landing page.\n\nIn a real implementation, this would redirect to a Payment Gateway (UPI/Card).");
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-                btn.classList.remove('opacity-75');
-            }, 1500);
-        }
 
         // Add custom shine animation for CSS
         const style = document.createElement('style');
